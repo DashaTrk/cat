@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cat poses preview</title>
+  <style>
+    body{margin:0;background:#ececec;display:grid;place-items:center;min-height:100vh}
+    .sheet{width:min(100%,2100px);height:auto;display:block}
+  </style>
+</head>
+<body>
+<svg class="sheet" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2100 560" width="2100" height="560" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Милый котенок в 5 позах: сидя, лежа, клубочком, машет лапкой, стоит">
+  <title>Котенок в 5 позах, близко к референсу</title>
+  <desc>Один лист с пятью позами котенка в стиле исходного референса.</desc>
+
+  <defs>
+    <g id="cat-head" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <!-- внешний контур головы с ушами -->
+      <path d="M75 210 C75 165 88 127 108 96 C86 66 73 29 74 -12 C76 -62 102 -74 146 -60 C196 -44 244 -12 292 26 C340 -12 388 -44 438 -60 C482 -74 508 -62 510 -12 C511 29 498 66 476 96 C496 127 509 165 509 210 C509 305 420 372 292 372 C164 372 75 305 75 210 Z"/>
+      <!-- внутренние уши -->
+      <path d="M130 -12 C130 -36 146 -40 164 -28 C188 -12 214 8 234 30 C209 37 197 49 195 64 C180 66 171 77 171 89 C158 87 146 100 140 118 C124 95 130 30 130 -12 Z"/>
+      <path d="M454 -12 C454 -36 438 -40 420 -28 C396 -12 370 8 350 30 C375 37 387 49 389 64 C404 66 413 77 413 89 C426 87 438 100 444 118 C460 95 454 30 454 -12 Z"/>
+    </g>
+
+    <g id="cat-face">
+      <ellipse cx="216" cy="205" rx="29" ry="33" fill="#000"/>
+      <ellipse cx="368" cy="205" rx="29" ry="33" fill="#000"/>
+      <circle cx="205" cy="191" r="9" fill="#fff"/>
+      <circle cx="357" cy="191" r="9" fill="#fff"/>
+      <circle cx="228" cy="217" r="4" fill="#fff"/>
+      <circle cx="380" cy="217" r="4" fill="#fff"/>
+      <path d="M280 238 Q292 246 304 238" fill="#000" stroke="#000" stroke-width="6" stroke-linecap="round"/>
+      <path d="M257 254 Q262 270 279 262 Q288 280 292 282 Q296 280 305 262 Q322 270 327 254" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M146 206 L88 202 M145 228 L94 236 M148 250 L110 274" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+      <path d="M438 206 L496 202 M439 228 L490 236 M436 250 L474 274" fill="none" stroke="#000" stroke-width="7" stroke-linecap="round"/>
+    </g>
+
+    <g id="tail" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M430 472 C512 482 578 438 594 376 C606 330 582 286 540 280 C506 274 476 298 478 330 C480 356 504 364 504 392 C504 430 464 462 430 448"/>
+    </g>
+
+    <g id="paw-cuts" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round">
+      <path d="M174 500 Q178 520 194 516"/>
+      <path d="M198 506 Q202 524 218 520"/>
+      <path d="M222 506 Q226 524 242 520"/>
+    </g>
+  </defs>
+
+  <!-- 1: сидя (почти как референс) -->
+  <g transform="translate(10,56)">
+    <use href="#cat-head"/>
+    <path d="M176 366 C146 402 132 454 140 494 C146 526 174 538 198 524 C214 550 244 560 286 558 C328 560 358 550 374 524 C398 538 426 526 432 494 C440 454 426 402 396 366 C372 338 346 322 334 300 C342 352 330 408 302 452 C296 460 292 468 286 468 C280 468 276 460 270 452 C242 408 230 352 238 300 C226 322 200 338 176 366 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M252 388 C270 412 280 448 286 468 C292 448 302 412 320 388" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <path d="M154 474 C140 490 140 512 156 522" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <path d="M418 474 C432 490 432 512 416 522" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <use href="#paw-cuts" transform="translate(-8,16)"/>
+    <use href="#paw-cuts" transform="translate(74,18)"/>
+    <use href="#paw-cuts" transform="translate(154,16)"/>
+    <use href="#tail"/>
+    <use href="#cat-face"/>
+  </g>
+
+  <!-- 2: лежа -->
+  <g transform="translate(430,92)">
+    <use href="#cat-head" transform="translate(12,6) scale(0.86)"/>
+    <path d="M118 434 C198 396 336 394 442 412 C530 426 580 458 578 492 C576 530 526 542 466 538 C362 532 224 534 122 548 C82 554 54 542 52 520 C50 494 74 464 118 434 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <ellipse cx="222" cy="536" rx="34" ry="22" fill="#fff" stroke="#000" stroke-width="8"/>
+    <ellipse cx="278" cy="538" rx="34" ry="22" fill="#fff" stroke="#000" stroke-width="8"/>
+    <path d="M566 498 C634 510 690 470 694 414 C698 370 670 328 632 330 C604 332 586 356 596 378 C606 400 630 406 630 430 C630 460 598 490 562 484" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <use href="#cat-face" transform="translate(12,6) scale(0.86)"/>
+  </g>
+
+  <!-- 3: клубочком -->
+  <g transform="translate(860,84)">
+    <path d="M290 548 C188 548 114 484 114 392 C114 304 184 240 270 240 C342 240 400 280 438 336 C478 396 482 472 434 518 C400 542 352 548 290 548 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <use href="#cat-head" transform="translate(52,48) scale(0.72)"/>
+    <path d="M414 456 C468 446 492 390 462 350 C436 316 400 318 378 342" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <use href="#cat-face" transform="translate(52,48) scale(0.72)"/>
+  </g>
+
+  <!-- 4: машет лапкой -->
+  <g transform="translate(1270,56)">
+    <use href="#cat-head"/>
+    <path d="M186 364 C158 402 146 452 154 494 C160 526 186 540 210 526 C226 550 252 560 286 558 C320 560 346 550 362 526 C386 540 412 526 418 494 C426 452 414 402 386 364" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M172 378 C144 418 130 474 146 514 C162 548 198 544 212 512" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M352 358 C388 334 426 296 418 258 C412 228 380 220 360 240 C344 258 346 286 366 302" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M438 172 L468 150 M450 200 L488 190 M452 228 L490 230" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <path d="M248 386 C266 410 278 442 286 470 C294 442 306 410 324 386" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <use href="#paw-cuts" transform="translate(72,18)"/>
+    <use href="#tail" transform="translate(-8,0)"/>
+    <use href="#cat-face"/>
+  </g>
+
+  <!-- 5: стоит -->
+  <g transform="translate(1680,56)">
+    <use href="#cat-head"/>
+    <path d="M186 362 C154 404 146 464 162 512 C174 548 206 554 224 532 L238 438 C240 406 224 376 186 362 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M398 362 C430 404 438 464 422 512 C410 548 378 554 360 532 L346 438 C344 406 360 376 398 362 Z" fill="#fff" stroke="#000" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M238 438 C250 520 262 548 286 548 C310 548 322 520 334 438" fill="none" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+    <use href="#paw-cuts" transform="translate(58,28)"/>
+    <use href="#tail" transform="translate(-8,-2)"/>
+    <use href="#cat-face"/>
+  </g>
+</svg>
+
+</body>
+</html>
